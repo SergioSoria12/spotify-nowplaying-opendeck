@@ -1,0 +1,32 @@
+{
+  "Name": "Now Playing",
+  "Author": "Sergio",
+  "Description": "Muestra la canción actual de Spotify",
+  "Version": "1.0.0",
+  "Icon": "icon",
+  "Category": "Spotify",
+  "CategoryIcon": "icon",
+  "CodePathLin": "nowplaying.py",
+  "Actions": [
+    {
+      "Name": "Now Playing",
+      "UUID": "com.sergio.nowplaying.action",
+      "Icon": "icon",
+      "States": [
+        {
+          "Image": "icon"
+        }
+      ]
+    }
+  ],
+  "OS": [
+    {
+      "Platform": "linux",
+      "MinimumVersion": "0"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "5.0"
+  }
+}
