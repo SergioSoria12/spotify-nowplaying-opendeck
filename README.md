@@ -39,18 +39,24 @@ Plugin para OpenDeck que muestra el artista y canción actual de Spotify en tu S
 
 ## Instalación
 
-### 1. Copia el plugin a OpenDeck
+# 1. Clona el repo
+```bash
+git clone https://github.com/SergioSoria12/spotify-nowplaying-opendeck
+cd spotify-nowplaying-opendeck
+```
+
+### 2. Copia el plugin a OpenDeck
 ```bash
 cp -r com.sergio.nowplaying.sdPlugin ~/.config/opendeck/plugins/
 ```
 
-### 2. Copia el script de Spotify
+### 3. Copia el script de Spotify
 ```bash
 cp spotify-now-playing.sh ~/.local/bin/
 chmod +x ~/.local/bin/spotify-now-playing.sh
 ```
 
-### 3. Configura tus credenciales de Spotify
+### 4. Configura tus credenciales de Spotify
 ```bash
 mkdir -p ~/.config/spotify-nowplaying
 nano ~/.config/spotify-nowplaying/config
@@ -65,10 +71,10 @@ REFRESH_TOKEN="tu_refresh_token"
 
 Para obtener el Refresh Token usa el script `get-token.py` incluido.
 
-### 4. Configura el Redirect URI en Spotify Developer Dashboard
+### 5. Configura el Redirect URI en Spotify Developer Dashboard
 Añade `http://127.0.0.1:8888/callback` en tu app de Spotify.
 
-### 5. Reinicia OpenDeck
+### 6. Reinicia OpenDeck
 El plugin aparecerá bajo la categoría **Spotify** en el panel de acciones.
 
 ## Configuración del botón en OpenDeck
