@@ -39,7 +39,7 @@ Plugin para OpenDeck que muestra el artista y canción actual de Spotify en tu S
 
 ## Instalación
 
-# 1. Clona el repo
+### 1. Clona el repo
 ```bash
 git clone https://github.com/SergioSoria12/spotify-nowplaying-opendeck
 cd spotify-nowplaying-opendeck
