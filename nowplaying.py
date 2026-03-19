@@ -5,6 +5,7 @@ import time
 import subprocess
 import threading
 import sys
+import os
 
 PORT = None
 PLUGIN_UUID = None
@@ -12,7 +13,7 @@ contexts = []
 
 def get_now_playing():
     result = subprocess.run(
-        ["/home/sergio/.local/bin/spotify-now-playing.sh"],
+        [os.path.expanduser("~/.local/bin/spotify-now-playing.sh")],
         capture_output=True, text=True
     )
     return result.stdout.strip()
